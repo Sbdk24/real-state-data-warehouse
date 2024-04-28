@@ -38,13 +38,13 @@
   ### Part 1: Data Retrieval
    
    **Functions:**
-  `main():` The main function iterates over states and pages within each state to extract data.
+  `main():` Iterates over states and pages within each state to extract data.
   `get_status(url):` It makes HTTP requests to a URL until a successful response is obtained or a retry limit is reached.
 > [!NOTE]
 > It's better to use headers to simulate a web browser request and states which contains information about states and their
 > corresponding URLs on inmuebles24.com.
-  `extract_data(properties, state):` It extracts relevant information from each real estate property on a specific page.
-  `parse_property_info(amenities):` It parses the features of a property to extract information such as square meters, rooms, bathrooms, and parking spaces.
+  `extract_data(properties, state):` Extracts relevant information from each real estate property on a specific page.
+  `parse_property_info(amenities):` Parses the features of a property to extract information such as square meters, rooms, bathrooms, and parking spaces.
 
   ### Part 2: Data Storage
    **psycopg2 Import:** This library enables connection and manipulation of PostgreSQL databases from Python.
