@@ -8,7 +8,11 @@
   pip install python-dotenv
   ```
 
-  For postgres manipulation with python we'll use `pip install psycopg2`, I'm currently working on my localhost, nevertheless if you're using 
+  For postgres manipulation with python we'll use 
+  ```
+  pip install psycopg2
+  ```
+  It's working on localhost, nevertheless if you're using 
   some other server, go ahead and change my server configuartion on `median_mode.py`.
   
   ### PostgreSQL:
