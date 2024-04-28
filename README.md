@@ -46,6 +46,7 @@
 > [!NOTE]
 > It's better to use headers to simulate a web browser request and states which contains information about states and their
 > corresponding URLs on inmuebles24.com.
+> 
   `extract_data(properties, state):` Extracts relevant information from each real estate property on a specific page.
   `parse_property_info(amenities):` Parses the features of a property to extract information such as square meters, rooms, bathrooms, and parking spaces.
 
