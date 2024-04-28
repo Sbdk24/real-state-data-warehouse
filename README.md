@@ -30,9 +30,10 @@
    These codes are designed to perform specific tasks related to obtaining and processing real estate data from all states of Mexico, as well as calculating basic 
    statistics on housing prices in those regions. Let's break them down into parts to understand how they work.
 
-   **It's divided in two main parts:**
-   First one is about getting the information by a website.
-   Second it's more about storing, cleaning and improving the database.
+   **Divided in two main parts:**
+
+   * First one is about getting the information by a website.
+   * Second it's more about storing, cleaning and improving the database.
   
   ### Part 1: Data Retrieval
    
