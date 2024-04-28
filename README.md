@@ -41,8 +41,10 @@
   ### Part 1: Data Retrieval
    
    **Functions:**
+   
   `main():` Iterates over states and pages within each state to extract data.
   `get_status(url):` It makes HTTP requests to a URL until a successful response is obtained or a retry limit is reached.
+  
 > [!NOTE]
 > It's better to use headers to simulate a web browser request and states which contains information about states and their
 > corresponding URLs on inmuebles24.com.
