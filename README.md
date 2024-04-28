@@ -31,10 +31,7 @@
 # Design and description:
 
   ## General purpose:
-   Store and managing real estate property listings scraped from the Inmuebles24 website for various states in Mexico. 
-  
-   These codes are designed to perform specific tasks related to obtaining and processing real estate data from all states of Mexico, as well as calculating basic 
-   statistics on housing prices in those regions. Let's break them down into parts to understand how they work.
+   Storing and managing real estate property listings scraped from various websites to get current data about real-state market for all states in Mexico. 
 
    **Divided in two main parts:**
 
@@ -79,6 +76,3 @@
   1. **Data Completeness**: The completeness of data depends on the availability of listings on the Inmuebles24 website.
   2. **Data Accuracy**: Accuracy of scraped data may vary and could be influenced by factors such as data entry errors or outdated listings.
 
-The goal of this design document is to provide clarity and transparency regarding the structure, purpose, and limitations of the database, facilitating understanding and collaboration among stakeholders.
-
-![Database_relation](relations.jpg)# real-state-data-warehouse
