@@ -53,11 +53,11 @@
 > 
 
   ### Part 2: Data Storage
-   **psycopg2 Import:** This library enables connection and manipulation of PostgreSQL databases from Python.
-   **Database Connection:** It establishes a connection to the specified database.
-   **Database Cursor:** It creates a cursor to execute SQL queries.
-   **Iteration over States:** It iterates over the list of states and executes SQL queries to calculate the median and mode of housing prices in each state.
-   **Closing Connection:** Finally, it closes the connection to the database.
+   - **psycopg2 Import:** This library enables connection and manipulation of PostgreSQL databases from Python.
+   - **Database Connection:** It establishes a connection to the specified database.
+   - **Database Cursor:** It creates a cursor to execute SQL queries.
+   - **Iteration over States:** It iterates over the list of states and executes SQL queries to calculate the median and mode of housing prices in each state.
+   - **Closing Connection:** Finally, it closes the connection to the database.
 
 ## DB Design:
 
