@@ -1,7 +1,8 @@
 import requests
+import os
+from dotenv import load_dotenv
 
-headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7)' +
-           'AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'}
+headers = {'User-Agent': os.getenv('HEADER')}
 
 states = [
     {'url_key': 'ciudad-de-mexico', 'filename': 'cdmx', 'name': 'ciudad de mexico'},
