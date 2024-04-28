@@ -16,17 +16,17 @@
   some other server, go ahead and change my server configuartion on `median_mode.py`.
   
   ### PostgreSQL:
-  - Mac users: The easiest way to start working with postgreSQL on Mac is to install [Postgres.app]().
+  - Mac users: The easiest way to start working with postgreSQL is to install [Postgres.app]().
     
-  - Windows/Linux: We're going to use the version provided by [PostgreSQL official website](https://www.postgresql.org/download/). Download
-    the lastest stable version.
+  - Windows/Linux: We're going to use the version provided by [PostgreSQL official website](https://www.postgresql.org/download/).
+    Download the lastest stable version.
   
-  In both cases, by installing postgres you'll also download a termimnal to manipulate database server. If you perfer to use you own one,
-  add the activate command to your PATH or just copy and paste the activation link in your terminal.
+  In both cases, by installing postgres you'll also get a termimnal to manipulate database server. 
+  If you perfer to use your own one, add the activate command to your PATH or just copy and paste the activation link in your terminal.
   
   > [!IMPORTANT]
-  > Be aware of ports managaging. If you've already downloaded Postgres, it's likely that you have still 5432 port opened
-  > so you're not be able to start the server, so that, you'll need to troubleshoot its configuration or choose a different port.
+  > Be aware of ports managaging. If you've already downloaded Postgres, it's likely that you still have port 5432 opened
+  > and you won't be able to run the server, so that, you'll need to troubleshoot its configuration or set a different port.
 
 # Design and description:
 
