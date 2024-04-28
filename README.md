@@ -31,4 +31,4 @@ The goal of this design document is to provide clarity and transparency regardin
 The project is developed for creating a full data warehouse with lots of information about the real state market in Mexico, using both historical data and current data, using batch storaging to keep it updated.
 
 ## Design
-![Database_relation](relations.jpg)
+![Database_relation](relations.jpg)# real-state-data-warehouse
