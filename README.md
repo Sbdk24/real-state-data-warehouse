@@ -1,11 +1,13 @@
 # Python Dependencies and Postgres set-up 
   ### Python:
   You'll need to install some libraries for **web scraping and parsing HTML text**:
-     *  `pip install beautifulsoup4`
-     *  `pip install lxml`
-     *  `pip install requests`
-     *  `pip install python-dotenv`
-  
+  ```
+  pip install beautifulsoup4
+  pip install lxml
+  pip install requests
+  pip install python-dotenv
+  ```
+
   For postgres manipulation with python we'll use `pip install psycopg2`, I'm currently working on my localhost, nevertheless if you're using 
   some other server, go ahead and change my server configuartion on `median_mode.py`.
   
