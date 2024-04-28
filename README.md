@@ -1,15 +1,26 @@
-# Database Design Document
+# Python Dependencies and Postgres set-up 
 
 ### Python:
-You'll need to install some libraries to scrap and parse HTML text:
+You'll need to install some libraries for **web scraping and parsing HTML text**:
    *  `pip install beautifulsoup4`
    *  `pip install lxml`
    *  `pip install requests`
    *  `pip install python-dotenv`
 
 ### PostgreSQL:
+- Mac users: The easiest way to start working with postgreSQL on Mac is to install [Postgres.app]().
+  
+- Windows/Linux: We're going to use the version provided by [PostgreSQL official website](https://www.postgresql.org/download/). Download
+  the lastest stable version.
 
+In both cases, by installing postgres you'll also download a termimnal to manipulate database server. If you perfer to use you own one,
+add the activate command to your PATH or just copy and paste the activation link in your terminal.
 
+> [!IMPORTANT]
+> Be aware of ports managaging. If you've already downloaded Postgres, it's likely that you have still 5432 port opened
+> so you're not be able to start the server, so that, you'll need to troubleshoot its configuration or choose a different port.
+
+# Design and description:
 
 ## Purpose
 Store and managing real estate property listings scraped from the Inmuebles24 website for various states in Mexico. 
