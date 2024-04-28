@@ -16,7 +16,7 @@
   some other server, go ahead and change my server configuartion on `median_mode.py`.
   
   ### PostgreSQL:
-  - Mac users: The easiest way to start working with postgreSQL is to install [Postgres.app]().
+  - Mac users: The easiest way to start working with postgreSQL is to install [Postgres.app](https://postgresapp.com/).
     
   - Windows/Linux: We're going to use the version provided by [PostgreSQL official website](https://www.postgresql.org/download/).
     Download the lastest stable version.
