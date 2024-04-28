@@ -42,10 +42,10 @@
    
    **Functions:**
    
-  `main():` Iterates over states and pages within each state to extract data.
-  `get_status(url):` It makes HTTP requests to a URL until a successful response is obtained or a retry limit is reached.
-  `extract_data(properties, state):` Extracts relevant information from each real estate property on a specific page.
-  `parse_property_info(amenities):` Parses the features of a property to extract information such as square meters, rooms, bathrooms, and parking spaces.
+  - `main():` Iterates over states and pages within each state to extract data.
+  - `get_status(url):` It makes HTTP requests to a URL until a successful response is obtained or a retry limit is reached.
+  - `extract_data(properties, state):` Extracts relevant information from each real estate property on a specific page.
+  - `parse_property_info(amenities):` Parses the features of a property to extract information such as square meters, rooms, bathrooms, and parking spaces.
   
 > [!NOTE]
 > It's better to use headers to simulate a web browser request and states which contains information about states and their
