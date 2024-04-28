@@ -33,12 +33,8 @@
   ## General purpose:
    Storing and managing real estate property listings scraped from various websites to get current data about real-state market for all states in Mexico. 
 
-   **Divided in two main parts:**
-
-   * First one is about getting the information by a website.
-   * Second it's more about storing, cleaning and improving the database.
   
-  ### Part 1: Data Retrieval
+  ### Data Retrieval
    
    **Functions:**
    
@@ -50,14 +46,6 @@
 > [!NOTE]
 > It's better to use headers to simulate a web browser request and states which contains information about states and their
 > corresponding URLs on inmuebles24.com.
-> 
-
-  ### Part 2: Data Storage
-   - **psycopg2 Import:** This library enables connection and manipulation of PostgreSQL databases from Python.
-   - **Database Connection:** It establishes a connection to the specified database.
-   - **Database Cursor:** It creates a cursor to execute SQL queries.
-   - **Iteration over States:** It iterates over the list of states and executes SQL queries to calculate the median and mode of housing prices in each state.
-   - **Closing Connection:** Finally, it closes the connection to the database.
 
 ## DB Design:
 
