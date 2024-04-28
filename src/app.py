@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 load_dotenv()
 """
 Headers are a useful piece of information extracted your own 
-credentials for letting the page 'knowyou're a human. 
+credentials for letting the page 'know' you're a human. 
 
 You can find them opening the browser console and typing navigator.userAgent
 """
