@@ -1,7 +1,18 @@
 # Database Design Document
 
+### Python:
+You'll need to install some libraries to scrap and parse HTML text:
+   *  `pip install beautifulsoup4`
+   *  `pip install lxml`
+   *  `pip install requests`
+   *  `pip install python-dotenv`
+
+### PostgreSQL:
+
+
+
 ## Purpose
-The purpose of this database is to store and manage real estate property listings scraped from the Inmuebles24 website for various states in Mexico. 
+Store and managing real estate property listings scraped from the Inmuebles24 website for various states in Mexico. 
 
 ## Scope
 The scope of this database encompasses the collection of property data including price, location, size, amenities, and descriptions. It aims to provide a comprehensive repository of real estate listings for analysis and reference.
