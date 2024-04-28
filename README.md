@@ -25,48 +25,40 @@
 # Design and description:
 
   ## General purpose:
-  Store and managing real estate property listings scraped from the Inmuebles24 website for various states in Mexico. 
+   Store and managing real estate property listings scraped from the Inmuebles24 website for various states in Mexico. 
   
-  ## BDD Scope:
-  The scope of this database encompasses the collection of property data including price, location, size, amenities, and descriptions. It aims to provide a   
-  comprehensive repository of real estate listings for analysis and reference.
-  
-  ## ¿Why Scraping?:
-  These codes are designed to perform specific tasks related to obtaining and processing real estate data from all states of Mexico, as well as calculating basic 
-  statistics on housing prices in those regions. Let's break them down into parts to understand how they work.
+   These codes are designed to perform specific tasks related to obtaining and processing real estate data from all states of Mexico, as well as calculating basic 
+   statistics on housing prices in those regions. Let's break them down into parts to understand how they work.
+
+   **It's divided in two main parts:**
+   First one is about getting the information by a website.
+   Second it's more about storing, cleaning and improving the database.
   
   ### Part 1: Data Retrieval
-  The first code block imports necessary libraries and defines a series of functions and variables to extract data from the real estate website inmuebles24.com.     Here are the key elements:
-
-  ### Part 2: Data Storage
-  This code block is responsible for storing the extracted data into a PostgreSQL database. Here are some notable features:
-  
-  **psycopg2 Import:** This library enables connection and manipulation of PostgreSQL databases from Python.
-  **Database Connection:** It establishes a connection to the specified database.
-  **Database Cursor:*+* It creates a cursor to execute SQL queries.
-  **Iteration over States:** It iterates over the list of states and executes SQL queries to calculate the median and mode of housing prices in each state.
-  **Closing Connection:** Finally, it closes the connection to the database.
-
-## Imports:
-  
-  It imports necessary libraries such as BeautifulSoup for web scraping and requests for making HTTP requests.
-  Configuration Variables: It defines variables like headers to simulate a web browser request and states which contains information about states and their 
-  corresponding URLs on inmuebles24.com.
-  
-  
-  **Functions:**
+   
+   **Functions:**
   `main():` The main function iterates over states and pages within each state to extract data.
   `get_status(url):` It makes HTTP requests to a URL until a successful response is obtained or a retry limit is reached.
+> [!NOTE]
+> It's better to use headers to simulate a web browser request and states which contains information about states and their
+> corresponding URLs on inmuebles24.com.
   `extract_data(properties, state):` It extracts relevant information from each real estate property on a specific page.
   `parse_property_info(amenities):` It parses the features of a property to extract information such as square meters, rooms, bathrooms, and parking spaces.
 
+  ### Part 2: Data Storage
+   **psycopg2 Import:** This library enables connection and manipulation of PostgreSQL databases from Python.
+   **Database Connection:** It establishes a connection to the specified database.
+   **Database Cursor:** It creates a cursor to execute SQL queries.
+   **Iteration over States:** It iterates over the list of states and executes SQL queries to calculate the median and mode of housing prices in each state.
+   **Closing Connection:** Finally, it closes the connection to the database.
 
+## DB Design:
 
-## Entities
-  1. **inm24**: Represents individual real estate properties.
-  2. **states**: Stores information about different states including median price, mode price, and total properties recorded.
+### Entities
+   1. **inm24**: Represents individual real estate properties.
+   2. **states**: Stores information about different states including median price, mode price, and total properties recorded.
 
-#3# Relationships
+### Relationships
   - The `inm24` table is related to the `states` table through the `property_state` attribute, establishing a connection between property listings and their respective states.
 
 ### Optimizations
@@ -82,6 +74,4 @@
 
 The goal of this design document is to provide clarity and transparency regarding the structure, purpose, and limitations of the database, facilitating understanding and collaboration among stakeholders.
 
-
-## Design
 ![Database_relation](relations.jpg)# real-state-data-warehouse
